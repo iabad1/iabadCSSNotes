@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Isiah Abad | CSS Notes</title>
+</head>
+<body>
+
+    <div id="main-container">
+
+        <div class="spacing">
+            <h1>CSS Notes</h1>
+            
+            <div class="chapter-container">
+                <nav id="navigation-column">
+                    <ul>
+                        <li><a href="#ch1">What is CSS?</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+        <div class="chapter-info">
+            <div class="spacing chapters">
+                <h2 id="ch1">What is CSS?</h2>
+                <ul>
+                    <li>Cascading style sheets</li>
+                    <li>styling language</li>
+                    <li>Used for presentation</li>
+                </ul>
+                <p>CSS Syntax includes selectors</p>
+       
+            </div>
+            <div class="spacing chapters">
+
+                <h2 id="ch2">Measurements in CSS</h2>
+                <p><strong>There are 4 main ways for measurements</strong></p>
+                <ul>
+                    <li>Pixels: In CSS we would use px</li>
+                    <p><strong>Example:</strong> padding: 10px; //which is 10 pixels away from a text</p>
+                    <li>Percentage: We would use % symbol to indicate the size based of the screen</li>
+                    <p><strong>Example:</strong> padding: 10%; //which is 10 percent of the screen</p>
+                    <li>Em: Em is used mainly for fonts and for others objects within a document</li>
+                    <p><strong>Example:</strong> If you wanted to have a font of size 12px, you would need to convert it to em by dividing the size by 16. </p>
+                    <p>Note: It would scale pased off the parent font. </p>
+                    <li>Rem: rem is imilar to em, except it is the root of the font size.</li>
+                    <p><strong>Root ems, are always relative to the font-size of the html element </strong></p>
+                    <p><strong>Example:</strong> If the font sizing of a font is 12px, an object that has a rem measurment would not scale to that size.</p>
+                </ul>
+
+            </div>
+
+            <div class="spacing chapters">
+
+                <h2 id="ch3">CSS Layouts</h2>
+                <p>In a HTML document, the positioning of each element is set to inline, which means that 
+                    it would reposition itself and stay in line within each text or element. 
+                </p>
+
+                <p>To control the layouts of a page there are a couple of properties that are important to do so.</p>
+
+                <h3>The Display Property</h3>
+                <p>The display property specifies if/how and element is displayed.</p>
+                <p>The default display values are mostly block or inline.</p>
+
+                <p><strong>Block elements</strong> always start on a new line and take up the full width available(stretches out to the left and right as far as it can)</p>
+                <p>Block level elements are:</p>
+                <ul>
+                    <li>div</li>
+                    <li>h1-h6</li>
+                    <li>p</li>
+                    <li>form</li>
+                    <li>header</li>
+                    <li>footer</li>
+                    <li>section</li>
+                </ul>
+                <p><strong>Inline elements</strong> usually do not start on a new line  and only takes up as much width as necessary.</p>
+                <p>Inline elements are: </p>
+                <ul>
+                    <li>span</li>
+                    <li>a</li>
+                    <li>img</li>
+                </ul>
+
+                <h3>Width, Height, and Max-Width</h3>
+                <p>When it comes to a responsive website, the width and height plays a key role.</p>
+                    <ul>
+                        <li><strong>Width</strong> determines how long an element is,</li>
+                        <li><strong>Height</strong> determines how long an image is,</li>
+                        <li><strong>Max-Width</strong> is the maximum length from right to left an element can be.</li>
+                    </ul>
+                
+                    <p>Height is the least of our problems, we can set the height to auto if there are large portions of text and can not have a specific height.</p>
+                    <p>When dealing with smaller windows, the width becomes the main problem.</p>
+                    <p>In this case, it's best to specify the max-width instead so that the width remains the same.</p>
+
+                    <p><strong>Example:</strong> Check out the width of chapter content in this page and see how the width is changed depending on the window size.</p>
+            </div>
+
+
+
+        </div> <!--End chapters info-->
+
+
+    </div> <!--end main-container-->
+    
+</body>
+</html>
