@@ -5,13 +5,14 @@ a{
     text-decoration: none;
 }
 
+
 html{
     font-size: 14px;
 }
 .spacing{
   
+    
     max-width: 40rem;
-  
     height: 100%;
     padding: 10px;
     margin: 10px auto;
@@ -21,10 +22,33 @@ html{
 
 }
 
+#navigation-column{
+    text-align: center;
+}
+#navigation-column ul{
+    padding: 0;
+}
+
+#navigation-column li{
+    display: inline-flex; /*inline blocks also works*/
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 10px;
+    margin: 5px 10px;
+
+    background-color: #9e9e9e75;
+    border-radius: 5px;
+}
+
 @media only screen and (max-width: 768px){
     .spacing{
       font-size: 20px;
       min-width: 20rem;
       
+    }
+    #navigation-column li{
+        display: block;
+        
     }
 }
